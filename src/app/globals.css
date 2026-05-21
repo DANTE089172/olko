@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-jet text-stone font-body antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection {
+    @apply bg-tan/30 text-stone;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tightest;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-page px-6 md:px-10;
+  }
+  .hairline {
+    @apply h-px w-full bg-stone/10;
+  }
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.25em] text-tan;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-none px-6 py-3 text-sm font-medium transition;
+  }
+  .btn-primary {
+    @apply btn bg-tan text-jet hover:bg-tan/90;
+  }
+  .btn-secondary {
+    @apply btn border border-stone/20 text-stone hover:border-stone/60;
+  }
+  .link-underline {
+    @apply relative inline-block after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-tan after:transition-transform hover:after:origin-left hover:after:scale-x-100;
+  }
+}
