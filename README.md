@@ -28,16 +28,19 @@ npm run build
 
 Static site is emitted to `out/`.
 
-## Deploy to Cloudflare Pages
+## Deploy to Cloudflare
+
+The site is deployed as a Cloudflare Worker with [Static Assets](https://developers.cloudflare.com/workers/static-assets/).
 
 ### Option A — Git integration (recommended)
 
-In the Cloudflare dashboard, create a Pages project connected to this repo with:
+In the Cloudflare dashboard, create a **Worker** connected to this repo with:
 
-- **Framework preset:** Next.js (Static HTML Export)
 - **Build command:** `npm run build`
-- **Build output directory:** `out`
+- **Deploy command:** `npx wrangler deploy`
 - **Node version:** 20
+
+`wrangler.toml` already declares `out` as the assets directory, so the worker will serve the static export directly.
 
 ### Option B — Direct upload via Wrangler
 
