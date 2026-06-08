@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     template: "%s — OLKO",
   },
   description:
-    "OLKO is a modern procurement and supply intelligence company specialising in polymers, packaging and industrial materials.",
-  metadataBase: new URL("https://olko.com"),
+    "OLKO is a modern procurement, sourcing and supply-chain intelligence company specialising in polymers, packaging, pharmaceutical and industrial materials.",
+  metadataBase: new URL("https://www.olko.com.au"),
   openGraph: {
     title: "OLKO — Strategic Sourcing. Intelligent Supply.",
     description:
-      "Procurement, sourcing and supply intelligence for polymers and industrial materials.",
+      "Procurement, sourcing and supply intelligence for polymers, pharmaceutical and industrial materials.",
     type: "website",
   },
 };

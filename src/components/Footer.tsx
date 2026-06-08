@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/lib/nav";
 
@@ -8,16 +9,20 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link href="/" className="flex items-center gap-3">
-              <span className="grid h-8 w-8 place-items-center bg-tan font-heading text-sm text-jet">
-                O
-              </span>
+              <Image
+                src="/logo.jpg"
+                alt="OLKO"
+                width={40}
+                height={40}
+                className="h-10 w-10 object-contain"
+              />
               <span className="font-heading text-lg tracking-tightest">
                 OLKO
               </span>
             </Link>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-stone/60">
               Strategic sourcing, intelligent supply and procurement support for
-              polymers, packaging and industrial materials.
+              polymers, packaging, pharmaceutical and industrial materials.
             </p>
           </div>
 
@@ -40,7 +45,16 @@ export function Footer() {
           <div className="md:col-span-4">
             <p className="eyebrow">Contact</p>
             <ul className="mt-6 space-y-3 text-sm text-stone/70">
-              <li>hello@olko.com</li>
+              <li>
+                <a href="mailto:hello@olko.com.au" className="hover:text-stone">
+                  hello@olko.com.au
+                </a>
+              </li>
+              <li>
+                <a href="https://www.olko.com.au" className="hover:text-stone">
+                  www.olko.com.au
+                </a>
+              </li>
               <li>Global supply &middot; sourcing on request</li>
             </ul>
             <Link href="/contact" className="mt-8 inline-flex btn-secondary">

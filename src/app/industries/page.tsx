@@ -4,13 +4,13 @@ import { Reveal } from "@/components/Reveal";
 const industries = [
   {
     n: "01",
-    title: "Packaging",
-    body: "Resin supply for film, rigid and flexible packaging converters working at scale.",
+    title: "Plastics Manufacturing",
+    body: "Resin and polymer supply for plastic manufacturers working across injection moulding, extrusion and blow moulding.",
   },
   {
     n: "02",
-    title: "Construction",
-    body: "Polymer and material inputs for pipe, profile, insulation and infrastructure manufacturers.",
+    title: "Packaging Converters",
+    body: "Resin supply for film, rigid and flexible packaging converters working at scale.",
   },
   {
     n: "03",
@@ -19,18 +19,28 @@ const industries = [
   },
   {
     n: "04",
-    title: "Consumer Goods",
-    body: "Reliable supply for housewares, durables and consumer-facing product lines.",
+    title: "Construction Materials",
+    body: "Polymer and material inputs for pipe, profile, insulation and infrastructure manufacturers.",
   },
   {
     n: "05",
-    title: "Agriculture",
-    body: "Materials for film, irrigation, packaging and on-farm industrial applications.",
+    title: "Recycling &amp; Circular Economy",
+    body: "Supply-chain support for recyclers, compounders and circular-economy operations.",
   },
   {
     n: "06",
-    title: "FMCG &amp; Import / Export",
-    body: "Procurement and supply support for FMCG producers and trade-driven operations.",
+    title: "Pharmaceutical &amp; Healthcare",
+    body: "Procurement and supply support for pharmaceutical, healthcare and TGA-regulated environments.",
+  },
+  {
+    n: "07",
+    title: "Food Manufacturing",
+    body: "Materials and supply-chain solutions for food-grade manufacturing and packaging operations.",
+  },
+  {
+    n: "08",
+    title: "Logistics &amp; Distribution",
+    body: "Procurement and operational support for logistics providers, 3PLs and distribution networks.",
   },
 ];
 
@@ -39,8 +49,8 @@ export default function IndustriesPage() {
     <>
       <PageHero
         eyebrow="Industries"
-        title="Sectors we serve."
-        description="OLKO works with manufacturers, converters and industrial buyers across polymer-intensive industries — from packaging to construction to FMCG."
+        title="Industries we support."
+        description="OLKO works with manufacturers, converters and industrial buyers across polymer-intensive and regulated industries — from plastics and packaging to pharmaceutical and food manufacturing."
       />
 
       <section className="py-24">

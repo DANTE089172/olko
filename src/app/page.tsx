@@ -22,6 +22,11 @@ const capabilities = [
     title: "Market Intelligence",
     body: "Pricing trends, supply risk and alternate-material insight.",
   },
+  {
+    n: "05",
+    title: "Quality & Compliance Advisory",
+    body: "Operational and supply-chain support for structured quality, compliance and procurement systems.",
+  },
 ];
 
 const stats = [
@@ -29,6 +34,25 @@ const stats = [
   { v: "Polymers", l: "Specialist focus" },
   { v: "Strategic", l: "Procurement lens" },
   { v: "Technical", l: "Commercial depth" },
+];
+
+const globalRegions = [
+  "Australia & New Zealand",
+  "China",
+  "South East Asia",
+  "EMEA (Europe, Middle East & Africa)",
+  "United States",
+];
+
+const networkCapabilities = [
+  "Supplier identification",
+  "Alternate sourcing strategies",
+  "Procurement support",
+  "Supply continuity planning",
+  "Logistics coordination",
+  "Market intelligence",
+  "International supplier engagement",
+  "Supply-chain risk assessment",
 ];
 
 export default function HomePage() {
@@ -93,6 +117,69 @@ export default function HomePage() {
               </p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Global Supplier Network */}
+      <section className="border-b border-stone/10 py-32">
+        <div className="container-page grid gap-16 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <Reveal>
+              <p className="eyebrow">Global Supplier Network</p>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-6 text-3xl leading-tight md:text-5xl">
+                Connected across regions, industries and supply chains.
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-base leading-relaxed text-stone/65">
+                OLKO maintains relationships across Australia, China, South East
+                Asia, EMEA and the United States to support sourcing, procurement
+                and supply-chain solutions.
+              </p>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <p className="mt-4 text-base leading-relaxed text-stone/65">
+                Our network spans manufacturers, distributors, logistics providers
+                and strategic supply partners operating across multiple industries
+                and regions.
+              </p>
+            </Reveal>
+          </div>
+
+          <div className="md:col-span-7">
+            <Reveal delay={0.1}>
+              <div className="grid gap-8 sm:grid-cols-2">
+                <div>
+                  <p className="eyebrow mb-4">Capabilities</p>
+                  <ul className="space-y-3">
+                    {networkCapabilities.map((c) => (
+                      <li
+                        key={c}
+                        className="text-sm leading-relaxed text-stone/70"
+                      >
+                        {c}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <p className="eyebrow mb-4">Regions Covered</p>
+                  <ul className="space-y-3">
+                    {globalRegions.map((r) => (
+                      <li
+                        key={r}
+                        className="text-sm leading-relaxed text-stone/70"
+                      >
+                        {r}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 

@@ -26,7 +26,11 @@ export default function ContactPage() {
             <Reveal>
               <div>
                 <p className="eyebrow">Email</p>
-                <p className="mt-3 text-base text-stone/80">hello@olko.com</p>
+                <p className="mt-3 text-base text-stone/80">
+                  <a href="mailto:hello@olko.com.au" className="hover:text-tan">
+                    hello@olko.com.au
+                  </a>
+                </p>
               </div>
             </Reveal>
             <Reveal delay={0.05}>

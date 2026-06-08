@@ -33,6 +33,11 @@ const solutions = [
     title: "Technical Sourcing Support",
     body: "Material qualification and grade matching for converters, manufacturers and product engineers.",
   },
+  {
+    n: "07",
+    title: "Quality & Compliance Advisory",
+    body: "Operational and supply-chain support for businesses requiring structured quality, compliance and procurement systems — including GMP, GDP, TGA and pharmaceutical logistics.",
+  },
 ];
 
 export default function SolutionsPage() {
@@ -61,6 +66,99 @@ export default function SolutionsPage() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Regulated Industries & Compliance Support */}
+      <section className="border-b border-stone/10 py-28">
+        <div className="container-page grid gap-16 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <Reveal>
+              <p className="eyebrow">Regulated Industries</p>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-6 text-3xl leading-tight md:text-4xl">
+                Regulated Industries &amp; Compliance Support
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-base leading-relaxed text-stone/65">
+                OLKO supports businesses operating within regulated manufacturing,
+                healthcare, pharmaceutical and food environments.
+              </p>
+            </Reveal>
+          </div>
+          <div className="md:col-span-7">
+            <Reveal delay={0.1}>
+              <p className="eyebrow mb-4">Experience includes</p>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {[
+                  "GMP (Good Manufacturing Practice)",
+                  "TGA regulated environments",
+                  "GDP (Good Distribution Practice)",
+                  "Pharmaceutical logistics",
+                  "Clinical trial logistics support",
+                  "Food manufacturing supply chains",
+                  "Supplier qualification programs",
+                  "Quality Management Systems (QMS)",
+                  "Inventory traceability and compliance",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="text-sm leading-relaxed text-stone/70"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Quality & Compliance Advisory detail */}
+      <section className="border-b border-stone/10 py-28">
+        <div className="container-page grid gap-16 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <Reveal>
+              <p className="eyebrow">Advisory</p>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <h2 className="mt-6 text-3xl leading-tight md:text-4xl">
+                Quality &amp; Compliance Advisory
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-base leading-relaxed text-stone/65">
+                OLKO provides operational and supply-chain support for businesses
+                requiring structured quality, compliance and procurement systems.
+              </p>
+            </Reveal>
+          </div>
+          <div className="md:col-span-7">
+            <Reveal delay={0.1}>
+              <p className="eyebrow mb-4">Services include</p>
+              <ul className="grid gap-3 sm:grid-cols-2">
+                {[
+                  "Pharmaceutical 3PL setup support",
+                  "Warehouse operational readiness",
+                  "Supplier qualification frameworks",
+                  "SOP development",
+                  "Procurement governance",
+                  "Inventory traceability systems",
+                  "Supply-chain risk management",
+                  "GMP / GDP process implementation support",
+                ].map((item) => (
+                  <li
+                    key={item}
+                    className="text-sm leading-relaxed text-stone/70"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
         </div>
       </section>
 
